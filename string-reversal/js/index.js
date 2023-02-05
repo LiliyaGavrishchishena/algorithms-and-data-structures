@@ -4,21 +4,18 @@
 
 // Examples:
 
-// reverse('apple') === 'leppa'
+// reverse('apple') === 'elppa'
 // reverse('hello') === 'olleh'
 // reverse('Greetings!') === '!sgniteerG'
 // You should put your implementation into the reverse function that was defined for you below.  You don't need to call reverse yourself.  Example of what your completed code should look like:
 
 // function reverse (str) {
-//   // Code to implement the reverse function
 // }
 
 const reverse = str => {
-  const splitString = str.split('')
-  const reverseArray = splitString.reverse()
-  const joinedArray = reverseArray.join('')
-
-  return joinedArray
+  return str.split('').reverse().join('')
 }
 
-reverse('apple')
+console.log(reverse('apple'))
+console.log(reverse('hello'))
+console.log(reverse('Greetings!'))
